@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>password-generator</title>
 </head>
 <body>
@@ -15,20 +16,23 @@
              <span id="length-value">16</span>
         </div>
 
-        <div>
-            <label for="uppercase">big letter</label>
-            <input type="checkbox" id="uppercase" name="uppercase">
-        </div>
-
-        <div>
-            <label for="numbers">numbers</label>
-            <input type="checkbox" id="numbers" name="numbers">
-        </div>
+        <div class="options">
+            <label>
+              big letter
+              <input type="checkbox" id="uppercase" />
+            </label>
+          
+            <label>
+              numbers
+              <input type="checkbox" id="numbers" />
+            </label>
+          </div>
+          
         <div>
             <button id="generate-btn">generate</button>
         </div>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
