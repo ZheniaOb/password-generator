@@ -30,5 +30,5 @@ generateBtn.addEventListener("click", () => {
       password += chars[randomIndex];
     }
   
-    alert("Your password is: " + password);
+    document.getElementById('result').textContent = `Your password: ${password}`;
   });
